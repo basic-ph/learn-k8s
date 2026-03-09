@@ -2,6 +2,7 @@
 
 ```sh
 minikube start --extra-config="apiserver.cors-allowed-origins=['http://boot.dev']"
+minikube dashboard --port=63840
 
 # create deployment
 kubectl create deployment synergychat-web --image=docker.io/bootdotdev/synergychat-web:latest
