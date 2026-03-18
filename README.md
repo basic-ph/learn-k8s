@@ -21,4 +21,6 @@ kubectl edit deployment synergychat-web
 kubectl get deployment synergychat-web -o yaml > web-deployment.yaml
 
 kubectl apply -f web-deployment.yaml
+
+kubectl get svc web-service -o yaml
 ```
